@@ -3,28 +3,28 @@
 class Bough < Formula
   desc "Draw what you built with Claude Code, Codex and Pi, and what it cost"
   homepage "https://www.bough.run"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/nickelsec/bough/releases/download/v0.7.0/bough_v0.7.0_darwin_arm64.tar.gz"
-      sha256 "fdf416238974ff9f6391e8924941196b11c9c1d63999396efdcdc69987f5eed8"
+      url "https://github.com/nickelsec/bough/releases/download/v0.7.1/bough_v0.7.1_darwin_arm64.tar.gz"
+      sha256 "cab2b4d27832a1be08a82cb5f07d545e613b0c817adc7cb8657b04f77bb8f9ce"
     end
     on_intel do
-      url "https://github.com/nickelsec/bough/releases/download/v0.7.0/bough_v0.7.0_darwin_amd64.tar.gz"
-      sha256 "6241b6efe1aa4bc65a637e715b3ecffb777c5c877d6d66eab263a65bcd2c1591"
+      url "https://github.com/nickelsec/bough/releases/download/v0.7.1/bough_v0.7.1_darwin_amd64.tar.gz"
+      sha256 "645f5304234c651900c5ab53ec809d1cc88cdeae00aac1711638488ade6d26e9"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/nickelsec/bough/releases/download/v0.7.0/bough_v0.7.0_linux_arm64.tar.gz"
-      sha256 "ea22b6eda5aea041db25e4692c18e1158351da61a94fecfacfae8c01755893f0"
+      url "https://github.com/nickelsec/bough/releases/download/v0.7.1/bough_v0.7.1_linux_arm64.tar.gz"
+      sha256 "5e2563450ab20fb179fbfd7aac18d914b842b3790d4e7fc5e518d0c18abb39e1"
     end
     on_intel do
-      url "https://github.com/nickelsec/bough/releases/download/v0.7.0/bough_v0.7.0_linux_amd64.tar.gz"
-      sha256 "664fce10b4c498cd10d509bea79044801fbb7e8370b38b517a30fac393da2362"
+      url "https://github.com/nickelsec/bough/releases/download/v0.7.1/bough_v0.7.1_linux_amd64.tar.gz"
+      sha256 "221b2f9e1d292f1c40b88f3a5a997314fdcd0861ed2ac710017e82f9a90eb670"
     end
   end
 
@@ -36,6 +36,6 @@ class Bough < Formula
   end
 
   test do
-    assert_match "0.7.0", shell_output("#{bin}/bough --version")
+    assert_match "0.7.1", shell_output("#{bin}/bough --version")
   end
 end
